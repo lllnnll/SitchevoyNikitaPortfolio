@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <main>
+      <div class="sidebar-container">
+        <div class="sidebar">
+          <div class="logo-details">
+            <i class='bx bx-face icon'></i>
+              <div class="logo_name">Portfolio</div>
+              <i class='bx bx-menu' id="btn" ></i>
+          </div>
+          <ul class="nav-list">
+            <li>
+              <a href="index.html">
+                <i class='bx bx-home'></i>
+                <span class="links_name">Home</span>
+              </a>
+               <span class="tooltip">Home</span>
+            </li>
+            <li>
+             <a href="work.html">
+               <i class='bx bx-briefcase' ></i>
+               <span class="links_name">Works</span>
+             </a>
+             <span class="tooltip">Works</span>
+           </li>
+          <li>
+            <a href="contact.html">
+              <i class='bx bx-paper-plane' ></i>
+              <span class="links_name">Contact Me !</span>
+            </a>
+            <span class="tooltip">Contact Me !</span>
+          </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="hero">
+          <div id="Moi">
+            <div id="description">
+              <h1>Bienvenue ! Je suis Nikita Sitchevoy,<br />19 ans, jeune développeur Bordelais !</h1>
+            </div>
+          </div>
+          <div id="Photo">
+            <div class="img-container">
+              <img class="portrait" src="/Img/Photo.png" alt="Photo de Nikita">
+            </div>
+          </div>
+        </div>
+        <div class="hero">
+          <div class="section" id="Works">
+            <div>
+              <h2>My works by language :</h2>
+            </div>
+            <div style="margin-bottom: 2rem;">
+              <button onclick="window.location.href='work.html'"><a class="btn" href="work.html">Java</a></button>
+              <button onclick="window.location.href='work.html#SQL'"><a class="btn" href="work.html#SQL">SQL</a></button>
+              <button onclick="window.location.href='work.html#Web'"><a class="btn" href="work.html#Web">HTML/CSS</a></button>
+              <button onclick="window.location.href='work.html#Bash'"><a class="btn" href="work.html#Bash">Bash</a></button>
+            </div>
+            <div>
+              <h2>
+                All my works :
+              </h2>
+              <button onclick="window.location.href='work.html'"><a class="btn" href="work.html">Works</a></button>
+            </div>
+          </div>
+          <div id="Other">
+            <h3>Sitchevoy</h3>
+            <hr width="30px">
+            <h3>Nikita</h3>
+            <hr width="30px">
+            <h3>19 ans</h3>
+            <hr width="30px">
+            <button onclick="window.location.href='contact.html'"><a class="btn" href="contact.html">Contact Me !</a></button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      let sidebar = document.querySelector(".sidebar");
+      let closeBtn = document.querySelector("#btn");
+      let searchBtn = document.querySelector(".bx-search");
+      closeBtn.addEventListener("click", ()=>{
+        sidebar.classList.toggle("open");
+        menuBtnChange();
+      });
+      searchBtn.addEventListener("click", ()=>{
+        sidebar.classList.toggle("open");
+        menuBtnChange();
+      });
+      function menuBtnChange() {
+       if(sidebar.classList.contains("open")){
+         closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+       }else {
+         closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+       }
+      }
+    </script>
+  </body>
+</html>
