@@ -19,6 +19,10 @@ h1,p{
   color: white
 }
 
+img{
+  clip-path:ellipse(50% 40%);
+}
+
 h2{
   color: #a881af;
 }
@@ -87,6 +91,7 @@ main {
 #Works {
   background-color: rgba(48,52,67,0.8);
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
