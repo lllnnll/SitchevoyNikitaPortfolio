@@ -16,12 +16,14 @@ hr{
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-left: 8rem;
 }
 
 .contenu{
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-left: 8rem;
 }
 .titre{
     justify-content: center;
@@ -248,13 +250,6 @@ a {
   align-items: center;
   flex-wrap: nowrap;
 }
-.sidebar li img{
-  height: 45px;
-  width: 45px;
-  object-fit: cover;
-  border-radius: 6px;
-  margin-right: 10px;
-}
 .home-section .text{
   display: inline-block;
   color: #11101d;
@@ -265,5 +260,10 @@ a {
 @media (max-width: 420px) {
   .sidebar li .tooltip{
     display: none;
+  }
+}
+@media (max-width: 550px){
+  .contenu img{
+    height:10rem;
   }
 }

@@ -16,11 +16,15 @@ p {
 
 h1,p{
   z-index: 1;
-  color: white
+  color: white;
+}
+
+h1{
+  padding-left: 1rem;
 }
 
 img{
-  clip-path:ellipse(50% 40%);
+  border-radius: 45%;
 }
 
 h2{
@@ -59,7 +63,8 @@ main {
 }
 
 .img-container {
-  width: 15rem;
+  padding-left: 2rem;
+  width: 20rem;
 }
 
 .portrait {
@@ -288,10 +293,21 @@ button:active {
   font-size: 18px;
   border-radius: 12px;
 }
-@media (max-width: 420px) {
+@media (max-width: 450px) {
   .sidebar li .tooltip{
     display: none;
   }
+  body{
+    padding-left: 1rem;
+  }
+  #Works{
+    width: 85%;
+    margin-left: 2rem;
+  }
+  #Moi{
+    width: 85%;
+  }
+  
 }
 
 @media only screen and (max-width: 768px) {
