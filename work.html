@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="work.css">
-    <title>Document</title>
+    <title>Works</title>
 </head>
 <body>
   <div class="sidebar">
@@ -52,13 +52,6 @@
        <span class="tooltip">Sql</span>
     </li>
     <li>
-      <a href="#Bash">
-        <i class='bx bx-terminal'></i>
-        <span class="links_name">Bash</span>
-      </a>
-       <span class="tooltip">Bash</span>
-    </li>
-    <li>
       <a href="contact.html">
         <i class='bx bx-paper-plane' ></i>
         <span class="links_name">Contact Me !</span>
@@ -73,18 +66,17 @@
     let searchBtn = document.querySelector(".bx-search");
     closeBtn.addEventListener("click", ()=>{
       sidebar.classList.toggle("open");
-      menuBtnChange();//calling the function(optional)
+      menuBtnChange();
     });
-    searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+    searchBtn.addEventListener("click", ()=>{
       sidebar.classList.toggle("open");
-      menuBtnChange(); //calling the function(optional)
+      menuBtnChange();
     });
-    // following are the code to change sidebar button(optional)
     function menuBtnChange() {
      if(sidebar.classList.contains("open")){
-       closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+       closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
      }else {
-       closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+       closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
      }
     }
     </script>
@@ -94,12 +86,14 @@
             <hr>
         </div>
         <div class="contenu">
-          <div><img src="Img/SaeJavaOdomo.png" alt=""></div>
+          <div><img src="Img/Odomo.png" alt=""></div>
           <button onclick="window.location.href='pdf/odomo.pdf'"><a class="btn" href="pdf/odomo.pdf" target="_blank">Vers le PDF</a></button>
           <hr>
         </div>
         <div class="contenu">
-          <img src="Img/SaeJavaBiosphere7.png" alt="">
+          <img src="Img/Biosphere7P1.png" alt="">
+          <br>
+          <img src="Img/Biosphere7P2.png" alt="">
           <button onclick="window.location.href='pdf/biosphere7.pdf'"><a class="btn" href="pdf/biosphere7.pdf" target="_blank">Vers le PDF</a></button>
           <hr>
       </div>
@@ -126,16 +120,11 @@
           <hr>
       </div>
     </div>
-    <div id="Bash">
-        <div class="titre">
-            <h1>Bash</h1>
-            <hr>
-        </div>
-        <div class="contenu">
-          <img src="Img/SaeBash.png" alt="">
-          <button onclick="window.location.href='pdf/bash.pdf'"><a class="btn" href="pdf/bash.pdf" target="_blank">Vers le PDF</a></button>
+    <div id="JS">
+      <div class="titre">
+          <h1>JS à venir</h1>
           <hr>
       </div>
-    </div>
+  </div>
 </body>
 </html>
