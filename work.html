@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="work.css">
-    <title>Works</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="work.css">
+  <title>Works</title>
 </head>
+
 <body>
   <div class="sidebar">
     <div class="logo-details">
       <i class='bx bx-face icon'></i>
-        <div class="logo_name">Portfolio</div>
-        <i class='bx bx-menu' id="btn" ></i>
+      <div class="logo_name">Portfolio</div>
+      <i class='bx bx-menu' id="btn"></i>
     </div>
     <ul class="nav-list">
       <li>
@@ -21,121 +23,141 @@
           <i class='bx bx-home'></i>
           <span class="links_name">Home</span>
         </a>
-         <span class="tooltip">Home</span>
+        <span class="tooltip">Home</span>
       </li>
       <li>
-       <a href="work.html">
-         <i class='bx bx-briefcase' ></i>
-         <span class="links_name">Works</span>
-       </a>
-       <span class="tooltip">Works</span>
-     </li>
-     <li>
-      <a href="#Java">
-        <i class='bx bx-code-curly'></i>
-        <span class="links_name">Java</span>
-      </a>
-       <span class="tooltip">Java</span>
-    </li>
-    <li>
-      <a href="#Web">
-        <i class='bx bx-world'></i>
-        <span class="links_name">Html/Css</span>
-      </a>
-       <span class="tooltip">Html/Css</span>
-    </li>
-    <li>
-      <a href="#SQL">
-        <i class='bx bx-data'></i>
-        <span class="links_name">Sql</span>
-      </a>
-       <span class="tooltip">Sql</span>
-    </li>
-    <li>
-      <a href="contact.html">
-        <i class='bx bx-paper-plane' ></i>
-        <span class="links_name">Contact Me !</span>
-      </a>
-      <span class="tooltip">Contact Me !</span>
-    </li>
+        <a href="work.html">
+          <i class='bx bx-briefcase'></i>
+          <span class="links_name">Works</span>
+        </a>
+        <span class="tooltip">Works</span>
+      </li>
+      <li>
+        <a href="#Java">
+          <i class='bx bx-code-curly'></i>
+          <span class="links_name">Java</span>
+        </a>
+        <span class="tooltip">Java</span>
+      </li>
+      <li>
+        <a href="#Web">
+          <i class='bx bx-world'></i>
+          <span class="links_name">Html/Css</span>
+        </a>
+        <span class="tooltip">Html/Css</span>
+      </li>
+      <li>
+        <a href="#SQL">
+          <i class='bx bx-data'></i>
+          <span class="links_name">Sql</span>
+        </a>
+        <span class="tooltip">Sql</span>
+      </li>
+      <li>
+        <a href="#Symfony">
+          <i class='bx bxs-pointer'></i>
+          <span class="links_name">Symfony</span>
+        </a>
+        <span class="tooltip">Symfony</span>
+      </li>
+      <li>
+        <a href="#JS">
+          <i class='bx bxs-file-js'></i>
+          <span class="links_name">JS</span>
+        </a>
+        <span class="tooltip">JS</span>
+      </li>
+      <li>
+        <a href="contact.html">
+          <i class='bx bx-paper-plane'></i>
+          <span class="links_name">Contact Me !</span>
+        </a>
+        <span class="tooltip">Contact Me !</span>
+      </li>
     </ul>
   </div>
-    <script>
+  <script>
     let sidebar = document.querySelector(".sidebar");
     let closeBtn = document.querySelector("#btn");
     let searchBtn = document.querySelector(".bx-search");
-    closeBtn.addEventListener("click", ()=>{
+    closeBtn.addEventListener("click", () => {
       sidebar.classList.toggle("open");
       menuBtnChange();
     });
-    searchBtn.addEventListener("click", ()=>{
+    searchBtn.addEventListener("click", () => {
       sidebar.classList.toggle("open");
       menuBtnChange();
     });
     function menuBtnChange() {
-     if(sidebar.classList.contains("open")){
-       closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
-     }else {
-       closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
-     }
+      if (sidebar.classList.contains("open")) {
+        closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+      } else {
+        closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+      }
     }
-    </script>
-    <div id="Java">
-        <div class="titre">
-            <h1>Java</h1>
-            <hr>
-        </div>
-        <div class="contenu">
-          <div><img src="Img/Odomo.png" alt=""></div>
-          <button onclick="window.location.href='pdf/odomo.pdf'"><a class="btn" href="pdf/odomo.pdf">Vers le PDF</a></button>
-          <hr>
-        </div>
-        <div class="contenu">
-          <img src="Img/Biosphere7P1.png" alt="">
-          <br>
-          <img src="Img/Biosphere7P2.png" alt="">
-          <button onclick="window.location.href='pdf/biosphere7.pdf'"><a class="btn" href="pdf/biosphere7.pdf">Vers le PDF</a></button>
-          <hr>
-      </div>
+  </script>
+  <div id="Java">
+    <div class="titre">
+      <h1>Java</h1>
+      <hr>
     </div>
-    <div id="Web">
-      <div class="titre">
-          <h1>Html / Css</h1>
-          <hr>
-      </div>
-      <div class="contenu">
-        <img src="Img/SaeWeb.png" alt="">
-        <button onclick="window.location.href='pdf/web.pdf'"><a class="btn" href="pdf/web.pdf">Vers le PDF</a></button>
-        <hr>
+    <div class="contenu">
+      <div><img src="Img/Odomo.png" alt=""></div>
+      <button onclick="window.location.href='pdf/odomo.pdf'"><a class="btn" href="pdf/odomo.pdf">Vers le
+          PDF</a></button>
+      <hr>
+    </div>
+    <div class="contenu">
+      <img src="Img/Biosphere7P1.png" alt="">
+      <br>
+      <img src="Img/Biosphere7P2.png" alt="">
+      <button onclick="window.location.href='pdf/biosphere7.pdf'"><a class="btn" href="pdf/biosphere7.pdf">Vers le
+          PDF</a></button>
+      <hr>
     </div>
   </div>
-    <div id="SQL">
-        <div class="titre">
-            <h1>SQL</h1>
-            <hr>
-        </div>
-        <div class="contenu">
-          <img src="Img/SaeSQL.png" alt="">
-          <button onclick="window.location.href='pdf/sql.pdf'"><a class="btn" href="pdf/sql.pdf">Vers le PDF</a></button>
-          <hr>
-      </div>
+  <div id="Web">
+    <div class="titre">
+      <h1>Html / Css</h1>
+      <hr>
     </div>
-    <div id="Symfony">
-      <div class="titre">
-          <h1>Symfony (html/css js php)</h1>
-          <hr>
-      </div>
-      <div class="contenu">
-        <img src="Img/Symfony.png" alt="">
-        <button onclick="window.location.href='pdf/symfony.pdf'"><a class="btn" href="pdf/symfony.pdf">Vers le PDF</a></button>
-        <hr>
+    <div class="contenu">
+      <img src="Img/SaeWeb.png" alt="">
+      <button onclick="window.location.href='pdf/web.pdf'"><a class="btn" href="pdf/web.pdf">Vers le PDF</a></button>
+      <hr>
+    </div>
+  </div>
+  <div id="SQL">
+    <div class="titre">
+      <h1>SQL</h1>
+      <hr>
+    </div>
+    <div class="contenu">
+      <img src="Img/SaeSQL.png" alt="">
+      <button onclick="window.location.href='pdf/sql.pdf'"><a class="btn" href="pdf/sql.pdf">Vers le PDF</a></button>
+      <hr>
+    </div>
+  </div>
+  <div id="Symfony">
+    <div class="titre">
+      <h1>Symfony (html/css js php)</h1>
+      <hr>
+    </div>
+    <div class="contenu">
+      <img src="Img/Symfony.png" alt="">
+      <button onclick="window.location.href='pdf/symfony.pdf'"><a class="btn" href="pdf/symfony.pdf">Vers le
+          PDF</a></button>
+      <hr>
     </div>
     <div id="JS">
       <div class="titre">
-          <h1>JS à venir</h1>
-          <hr>
+        <h1>JS</h1>
+        <img src="Img/JS.png" alt="">
+        <button onclick="window.location.href='pdf/JS.pdf'"><a class="btn" href="pdf/JS.pdf">Vers le PDF</a></button>
+        <hr>
       </div>
-  </div>
-  <button id="fixedButton"><a href="contact.html">Contact me !</a></button>
+    </div>
+    <button id="fixedButton"><a href="contact.html">Contact me !</a></button>
 </body>
+
 </html>
